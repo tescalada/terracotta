@@ -92,6 +92,9 @@ class TerracottaSettings(NamedTuple):
     #: Use a process pool for band retrieval in parallel
     USE_MULTIPROCESSING: bool = True
 
+    #: Number of workers to use for multiprocessing
+    MULTIPROCESSING_WORKERS: int = 3
+
     #: Maximum number of metadata keys per POST /metadata request
     MAX_POST_METADATA_KEYS: int = 100
 
